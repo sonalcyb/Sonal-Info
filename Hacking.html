@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ethical Hacking kya hai? Ek complete in-depth beginner's guide 2026 ke liye. Janiye hacking ke phases, top tools, aur apni InfoSec journey kaise start karein.">
+    <title>Ethical Hacking Kya Hai? Ek Beginner's Guide (2026) | Sonal InfoSec</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific styles for long-form blog readability */
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        .article-meta { color: var(--accent-green); font-family: var(--font-code); font-size: 0.9rem; margin-top: 10px; }
+        .article-content { max-width: 800px; margin: 0 auto; color: var(--text-secondary); font-size: 1.1rem; line-height: 1.8; }
+        
+        .article-content h2 { color: var(--text-primary); margin-top: 3.5rem; margin-bottom: 1.2rem; font-family: var(--font-code); border-bottom: 1px solid rgba(0, 255, 102, 0.2); padding-bottom: 10px; text-transform: uppercase; }
+        .article-content h3 { color: var(--accent-blue); margin-top: 2rem; margin-bottom: 1rem; }
+        .article-content p { margin-bottom: 1.5rem; }
+        .article-content ul { margin-bottom: 1.5rem; padding-left: 20px; }
+        .article-content li { margin-bottom: 0.8rem; }
+        
+        .info-box { background-color: var(--bg-darker); padding: 25px; border-radius: 8px; border-left: 4px solid var(--accent-blue); margin-bottom: 2rem; box-shadow: inset 0 0 15px rgba(0,0,0,0.6); }
+        
+        .highlight-quote { font-size: 1.3rem; font-style: italic; color: var(--text-primary); border-left: 4px solid var(--accent-green); padding-left: 20px; margin: 2.5rem 0; background: rgba(0,255,102,0.05); padding: 20px; border-radius: 0 8px 8px 0; }
+        
+        .tool-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 2rem; }
+        .tool-card { background: #111; border: 1px solid #333; padding: 15px; border-radius: 6px; text-align: center; }
+        .tool-card h4 { color: var(--accent-green); margin-bottom: 5px; font-family: var(--font-code); }
+        
+        .author-box { margin-top: 5rem; padding: 2rem; background: var(--bg-darker); border-radius: 8px; border-left: 4px solid var(--accent-green); display: flex; align-items: center; gap: 20px; }
+        
+        @media (max-width: 600px) { .tool-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+    <nav id="navbar" class="scrolled">
+        <div class="nav-container">
+            <h1 class="logo"><a href="index.html" style="color:inherit;"><span class="bracket">[</span>Sonal<span class="highlight">InfoSec</span><span class="bracket">]</span></a></h1>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#terminal">Terminal</a></li>
+                <li><a href="index.html#tools">Tools</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section" style="padding-top: 150px;">
+        <div class="container card">
+            
+            <div class="article-header">
+                <h1 style="font-size: 2.5rem; color: var(--text-primary); text-transform: uppercase;">Ethical Hacking Kya Hai? The Ultimate Beginner’s Guide (2026)</h1>
+                <div class="article-meta">
+                    <span>Published on Feb 20, 2026</span> | <span>By Sonal</span> | <span>🕒 8 Min Read</span>
+                </div>
+            </div>
+
+            <article class="article-content">
+                <p>Movies mein aksar dikhaya jata hai ki ek hacker dark room mein hoodie pehan kar baitha hai, uske 3-4 screens par green color ka text chal raha hai, aur wo 30 second mein kisi bhi bank ka system bypass kar leta hai. Par reality? Reality mein isme bohot patience, technology ki deep knowledge, ghanto tak documentation padhna aur dher sara trial and error lagta hai.</p>
+
+                <p>Aur sabse zaroori baat—har hacking illegal nahi hoti. In fact, aajkal Google, Apple aur Microsoft jaisi badi tech companies hackers ko croro rupaye (Bug Bounties) deti hain unke systems mein kamiyan dhundhne ke liye. Isi legal, highly-paid aur exciting career ko hum <strong>Ethical Hacking</strong> kehte hain.</p>
+
+                <blockquote class="highlight-quote">
+                    "Ek hacker ko harane ke liye, tumhe ek hacker ki tarah sochna padega. Par ek ethical hacker banne ke liye, tumhe ek professional ki tarah act karna padega."
+                </blockquote>
+
+                <h2>Hacking ke Hats: Kaun Kya Hai?</h2>
+                <p>Hacking seekhne se pehle, tumhe internet par maujood alag-alag type ke hackers ke baare mein pata hona chahiye, jinhe hum "Hats" se pehchante hain:</p>
+                <ul>
+                    <li><strong>Black Hat Hackers:</strong> Yeh wo cybercriminals hote hain jinke baare mein tum news mein sunte ho. Yeh bina permission ke systems mein ghuste hain, data churate hain, aur ransomware daal kar paise maangte hain.</li>
+                    <li><strong>White Hat Hackers (Ethical Hackers):</strong> Yeh good guys hote hain. Yeh bilkul Black Hats jaisi hi techniques use karte hain, par inke paas system owner ki written permission hoti hai. Inka kaam system mein flaws (bugs) dhundh kar unhe fix karwana hota hai, taaki koi Black Hat unka fayda na utha sake.</li>
+                    <li><strong>Grey Hat Hackers:</strong> Yeh middle ground mein khelte hain. Yeh bina permission ke systems ki security test karte hain (jo technically illegal hai), par nuksaan pahunchane ke bajaye ye owner ko inform kar dete hain. Aksar ye iske badle Bug Bounty ki umeed rakhte hain.</li>
+                </ul>
+
+                <h2>Ethical Hacking ke 5 Important Phases</h2>
+                <p>Professional ethical hackers bas random scripts run karke ya passwords guess karke system hack nahi karte. Wo ek proper framework follow karte hain.</p>
+
+                
+
+                <div class="info-box">
+                    <h3 style="margin-top: 0;">1. Reconnaissance (Information Gathering)</h3>
+                    <p>Yeh sabse critical phase hai. Isme hacker target ke baare mein zyada se zyada information nikalta hai—jaise leaked emails, DNS records, subdomains, aur OSINT techniques ka use karke. Is phase mein target ko pata bhi nahi chalta ki uspar nazar rakhi jaa rahi hai.</p>
+                </div>
+
+                <div class="info-box">
+                    <h3 style="margin-top: 0;">2. Scanning & Enumeration</h3>
+                    <p>Yahan hacker target ke network se directly interact karta hai. Wo tools ka use karke open ports, live systems, aur network par run ho rahi services (jaise purana Apache ya outdated PHP) ko dhundhta hai taaki entry point mil sake.</p>
+                </div>
+
+                <div class="info-box">
+                    <h3 style="margin-top: 0;">3. Gaining Access (Exploitation)</h3>
+                    <p>Recon aur Scanning se mili information ka use karke, ab hacker system mein ghusne ka try karta hai. Yeh kisi login page par SQL Injection ho sakta hai, kisi purane server ko exploit karna ho sakta hai, ya fir employee ko Phishing email bhejna ho sakta hai.</p>
+                </div>
+
+                <div class="info-box">
+                    <h3 style="margin-top: 0;">4. Maintaining Access</h3>
+                    <p>Ek baar system ke andar aane ke baad, goal hota hai wahan tike rehna. Hackers system mein 'Backdoors' ya 'Rootkits' install kar dete hain taaki unhe agli baar aane ke liye dobara shuru se hack na karna pade.</p>
+                </div>
+
+                <div class="info-box">
+                    <h3 style="margin-top: 0;">5. Covering Tracks</h3>
+                    <p>Ek accha hacker apna koi nishaan nahi chhodta. Is phase mein system ke log files clear kiye jaate hain, taaki system administrator ko breach (hack) ke baare mein kuch pata hi na chale.</p>
+                </div>
+
+                <h2>The Hacker's Toolkit: Pros Kya Use Karte Hain?</h2>
+                <p>Tumhe har tool khud banane ki zaroorat nahi hai. Cybersecurity community mein kuch aisi powerful tools hain jo industry standard ban chuki hain.</p>
+
+                
+
+                <div class="tool-grid">
+                    <div class="tool-card">
+                        <h4>Burp Suite</h4>
+                        <p style="font-size: 0.9rem; margin-bottom: 0;">Web application testing ka master tool. Yeh tumhare browser aur server ke beech ka traffic intercept (capture) karta hai.</p>
+                    </div>
+                    <div class="tool-card">
+                        <h4>Nmap</h4>
+                        <p style="font-size: 0.9rem; margin-bottom: 0;">Network Mapper. Target ke network par kon se ports aur services open hain, yeh dhundhne ke liye sabse best hai.</p>
+                    </div>
+                    <div class="tool-card">
+                        <h4>Metasploit</h4>
+                        <p style="font-size: 0.9rem; margin-bottom: 0;">Ek massive framework jisme hazaro exploits pehle se likhe hote hain kisi bhi vulnerable system par attack karne ke liye.</p>
+                    </div>
+                    <div class="tool-card">
+                        <h4>Wireshark</h4>
+                        <p style="font-size: 0.9rem; margin-bottom: 0;">Network protocol analyzer. Yeh network par aane-jaane wale ek-ek data packet ko microscopic level par dikhata hai.</p>
+                    </div>
+                </div>
+
+                <h2>Kahan Practice Karein? (Safely aur Legally)</h2>
+                <p><strong>Warning:</strong> Kabhi bhi apni hacking tools kisi aisi website ya network par mat chalana jiski tumhare paas explicit written permission na ho. Yeh strictly illegal hai.</p>
+                <p>Agar tumhe practice karni hai, toh in platforms par jao jo specially ethical hackers ke liye banaye gaye hain:</p>
+                <ul>
+                    <li><strong>TryHackMe:</strong> Complete beginners ke liye best hai. Yahan tumhe step-by-step guided rooms milenge jo Linux se lekar advance web exploitation tak sab sikhate hain.</li>
+                    <li><strong>Hack The Box:</strong> Yeh thoda advanced hai. Yahan tumhe ek vulnerable machine de di jaati hai aur tumhe khud figure out karna hota hai ki use hack kaise karna hai.</li>
+                    <li><strong>PortSwigger Web Security Academy:</strong> Burp Suite banane walo ne hi isey banaya hai. Web vulnerabilities seekhne ke liye isse accha free resource internet par nahi hai.</li>
+                </ul>
+
+                <h2>Apni Journey Aaj Hi Kaise Start Karein?</h2>
+                <p>Simple sa rule hai—tum us chiz ko hack nahi kar sakte jo tumhe banani nahi aati. Agar Cybersecurity Engineer banna hai, toh pehle building seekho, phir breaking. Web pages kaise kaam karte hain iske liye <strong>HTML, CSS, aur JavaScript</strong> seekho. Networking ke concepts clear karo.</p>
+                
+                <p>Jab basics aache se aa jayein, toh <strong>Python</strong> seekho. Apne hacking tools ko automate karne aur custom exploits likhne ke liye Python sabse faad language hai. Security ek marathon hai, sprint nahi—kuch naya seekhte raho aur aage badhte raho!</p>
+
+                <div class="author-box">
+                    <div>
+                        <h3 style="color: var(--accent-green); margin-top: 0; font-family: var(--font-code);">About the Author</h3>
+                        <p style="margin-bottom: 0; font-size: 0.95rem;">Sonal ek diploma student hai jiska main focus offensive security, Python development, aur web vulnerabilities par hai. Ethical hacking scratch se seekhne ke liye uske YouTube channel <strong>Cyber Sonal</strong> ke sath jud jayein.</p>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#">GitHub</a>
+                <a href="#">YouTube (Cyber Sonal)</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+            </div>
+            <div class="legal-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+                <a href="disclaimer.html">Disclaimer</a>
+            </div>
+            <p>&copy; 2026 Sonal InfoSec. Built with ❤️ and Code.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

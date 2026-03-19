@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Janiye duniya ke sabse common cyber attacks (Phishing, Ransomware, DDoS, SQLi) ke baare mein aur unhe prevent karne ke best security practices.">
+    <title>Common Cyber Attacks and How to Prevent Them | Sonal InfoSec</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific styles for long-form blog readability */
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        .article-meta { color: var(--accent-green); font-family: var(--font-code); font-size: 0.9rem; margin-top: 10px; }
+        .article-content { max-width: 800px; margin: 0 auto; color: var(--text-secondary); font-size: 1.1rem; line-height: 1.8; }
+        
+        .article-content h2 { color: var(--text-primary); margin-top: 3.5rem; margin-bottom: 1.2rem; font-family: var(--font-code); border-bottom: 1px solid rgba(0, 255, 102, 0.2); padding-bottom: 10px; text-transform: uppercase; }
+        .article-content h3 { color: var(--accent-blue); margin-top: 2.5rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 10px; }
+        .article-content p { margin-bottom: 1.5rem; }
+        .article-content ul { margin-bottom: 1.5rem; padding-left: 20px; }
+        .article-content li { margin-bottom: 0.8rem; }
+        
+        .info-box { background-color: var(--bg-darker); padding: 25px; border-radius: 8px; border-left: 4px solid var(--accent-blue); margin-bottom: 2rem; box-shadow: inset 0 0 15px rgba(0,0,0,0.6); }
+        .prevention-box { background: rgba(0,255,102,0.05); padding: 15px; border-radius: 6px; border: 1px dashed var(--accent-green); margin-top: 15px; }
+        .prevention-box h4 { color: var(--accent-green); margin-bottom: 5px; font-family: var(--font-code); }
+        
+        .highlight-quote { font-size: 1.3rem; font-style: italic; color: var(--text-primary); border-left: 4px solid var(--accent-green); padding-left: 20px; margin: 2.5rem 0; background: rgba(0,255,102,0.05); padding: 20px; border-radius: 0 8px 8px 0; }
+        
+        .author-box { margin-top: 5rem; padding: 2rem; background: var(--bg-darker); border-radius: 8px; border-left: 4px solid var(--accent-green); display: flex; align-items: center; gap: 20px; }
+    </style>
+</head>
+<body>
+
+    <nav id="navbar" class="scrolled">
+        <div class="nav-container">
+            <h1 class="logo"><a href="index.html" style="color:inherit;"><span class="bracket">[</span>Sonal<span class="highlight">InfoSec</span><span class="bracket">]</span></a></h1>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#terminal">Terminal</a></li>
+                <li><a href="index.html#tools">Tools</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section" style="padding-top: 150px;">
+        <div class="container card">
+            
+            <div class="article-header">
+                <h1 style="font-size: 2.5rem; color: var(--text-primary); text-transform: uppercase;">Common Cyber Attacks and How to Prevent Them</h1>
+                <div class="article-meta">
+                    <span>Published on Apr 02, 2026</span> | <span>By Sonal</span> | <span>🕒 8 Min Read</span>
+                </div>
+            </div>
+
+            <article class="article-content">
+                <p>Internet par har din hazaron cyber attacks hote hain. Chahe tum ek normal internet user ho, ek CS diploma student, ya kisi badi MNC ke CEO—koi bhi in attacks se completely safe nahi hai. Hackers lagatar naye tareeqe dhundh rahe hain hamara data aur paisa churane ke liye.</p>
+
+                <p>Ek Cybersecurity Engineer ka sabse bada rule yahi hai: "Defense seekhne se pehle offense ko samajhna padta hai." Aaj hum un top 5 cyber attacks ke baare mein baat karenge jo sabse zyada common hain, aur dekhenge ki unse kaise bacha ja sakta hai.</p>
+
+                <blockquote class="highlight-quote">
+                    "Amateurs hack systems. Professionals hack people." - Bruce Schneier
+                </blockquote>
+
+                <h3>1. Phishing & Social Engineering</h3>
+                <p>Phishing internet ka sabse purana aur sabse successful attack hai. Isme hacker koi technical jadu nahi karta, balki wo user ko bewakoof banata hai. Kal hi mere dost Prateek ke paas ek SMS aaya ki "Your bank account is blocked, click here to update KYC." Jaise hi koi us fake link par click karke apni details daalta hai, uska game over ho jata hai.</p>
+                
+                
+
+                <div class="prevention-box">
+                    <h4>🛡️ How to Prevent:</h4>
+                    <p style="margin-bottom:0; font-size: 0.95rem;">Kabhi bhi emails ya SMS mein aaye unknown links par click mat karo. Sender ka email address dhyan se check karo (jaise `support@amazon-help.com` fake hai, asli `amazon.com` hoga). Hamesha 2FA (Two-Factor Authentication) on rakho.</p>
+                </div>
+
+                <h3>2. Malware & Ransomware</h3>
+                <p>Malware (Malicious Software) ek aisa code hota hai jo tumhare system ko nuksan pahunchane ke liye banaya jata hai. Iska sabse khatarnak roop hai <strong>Ransomware</strong>. Is attack mein hacker tumhare computer ke saare files ko encrypt (lock) kar deta hai, aur unhe kholne ke liye Bitcoin mein ransom (firauti) maangta hai.</p>
+
+                <div class="prevention-box">
+                    <h4>🛡️ How to Prevent:</h4>
+                    <p style="margin-bottom:0; font-size: 0.95rem;">Hamesha apna data external hard drive ya cloud par backup karke rakho. Cracked software ya pirated games download karne se bacho kyunki unme sabse zyada malware chupa hota hai. Ek accha Antivirus (Windows Defender is great) hamesha updated rakho.</p>
+                </div>
+
+                <h3>3. Man-in-the-Middle (MitM) Attack</h3>
+                <p>Maan lo tum kisi cafe mein baithe ho aur wahan ke "Free Wi-Fi" se connect karke apna bank balance check kar rahe ho. Ek hacker usi Wi-Fi se connected ho sakta hai aur tumhare aur router ke beech ka saara traffic intercept (read) kar sakta hai. Isey Man-in-the-Middle attack kehte hain.</p>
+                
+                
+
+                <div class="prevention-box">
+                    <h4>🛡️ How to Prevent:</h4>
+                    <p style="margin-bottom:0; font-size: 0.95rem;">Public Wi-Fi par kabhi bhi sensitive transactions mat karo. Agar karna hi pade, toh hamesha ek trusted <strong>VPN (Virtual Private Network)</strong> use karo jo tumhare data ko encrypt kar de. Sirf unhi websites par jao jinme `HTTPS` (padlock icon) laga ho.</p>
+                </div>
+
+                <h3>4. SQL Injection (SQLi)</h3>
+                <p>Yeh web developers ka sabse bada nightmare hai. Jab koi user kisi website ke login ya search box mein malicious SQL commands daal deta hai, aur backend database usey process kar leta hai, toh use SQL Injection kehte hain. Isse hackers poora database dump kar sakte hain.</p>
+
+                <div class="prevention-box">
+                    <h4>🛡️ How to Prevent (For Developers):</h4>
+                    <p style="margin-bottom:0; font-size: 0.95rem;">User ke input par kabhi bharosa mat karo. Hamesha <strong>Prepared Statements (Parameterized Queries)</strong> ka use karo taaki database malicious code aur actual data ke beech ka farq samajh sake. Web Application Firewalls (WAF) bhi SQLi ko block karne mein help karte hain.</p>
+                </div>
+
+                <h3>5. Distributed Denial of Service (DDoS)</h3>
+                <p>DDoS attack mein hacker ka goal data churana nahi hota, balki kisi website ya server ko crash karna hota hai. Hacker hazaron infected computers (jinhe Botnet kehte hain) ka use karke kisi ek server par itna zyada fake traffic bhejta hai ki wo overload hokar down ho jata hai.</p>
+
+                <div class="prevention-box">
+                    <h4>🛡️ How to Prevent:</h4>
+                    <p style="margin-bottom:0; font-size: 0.95rem;">Servers par Rate Limiting set karni chahiye taaki ek IP address se aane wali requests limit ho sakein. Cloudflare ya AWS Shield jaisi Anti-DDoS services ka use karna chahiye jo fake traffic ko server tak pahunchne se pehle hi filter kar deti hain.</p>
+                </div>
+
+                <h2>Conclusion</h2>
+                <p>Cybersecurity kisi ek tool ya software ka naam nahi hai, yeh ek mindset hai. Internet par apni aakhein khuli rakhna aur basics ko follow karna tumhe 99% cyber attacks se bacha sakta hai. Stay secure, keep learning, and don't click that suspicious link!</p>
+
+                <div class="author-box">
+                    <div>
+                        <h3 style="color: var(--accent-green); margin-top: 0; font-family: var(--font-code);">About the Author</h3>
+                        <p style="margin-bottom: 0; font-size: 0.95rem;">Sonal ek aspiring Cybersecurity Engineer aur tech content creator hai. Web vulnerabilities, Python scripts, aur hacking concepts ko aasaani se samajhne ke liye <strong>Cyber Sonal</strong> YouTube channel par visit karein.</p>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#">GitHub</a>
+                <a href="#">YouTube (Cyber Sonal)</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+            </div>
+            <div class="legal-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+                <a href="disclaimer.html">Disclaimer</a>
+            </div>
+            <p>&copy; 2026 Sonal InfoSec. Built with ❤️ and Code.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
